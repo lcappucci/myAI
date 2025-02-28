@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Garamond Bold, Helvetica, sans-serif;
+  font-family: Garamond bold, Helvetica, sans-serif;
 }
 
 @layer utilities {
