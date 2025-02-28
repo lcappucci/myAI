@@ -34,19 +34,19 @@ const extraMessages: string[] = [
 ];
 
 const extraOtherMessages: string[] = [
-  'Or, "what are typical Healthcare EBITDA multiples?"',
-  'Or, "what are typical Industrials EBITDA multiples?"',
-  'Or, "what are typical Tech EBITDA multiples?"',
-  'Or, "what are typical Oil & Gas EBITDA multiples?"',
-  'Or, "what are typical Power & Infrastructure EBITDA multiples?"',
-  'Or, "what are typical Real Estate EBITDA multiples?"',
-  'Or, "what are typical Insurance EBITDA multiples?"',
-  'Or, "what are typical Wealth Management EBITDA multiples?"',
-  'Or, "what are typical Consumer Goods EBITDA multiples?"',
-  'Or, "what are typical Financial Services EBITDA multiples?"',
-  'Or, "what are typical Telecommunications EBITDA multiples?"',
-  'Or, "what are typical Transportation EBITDA multiples?"',
-  'Or, "what are typical Energy Transition EBITDA multiples?"'
+  "Or, \"what's a recent Healthcare transaction multiple?\"",
+  "Or, \"what's a recent Industrials transaction multiple?\"",
+  "Or, \"what's a recent Tech transaction multiple?\"",
+  "Or, \"what's a recent Oil & Gas transaction multiple?\"",
+  "Or, \"what's a recent Power & Infrastructure transaction multiple?\"",
+  "Or, \"what's a recent Real Estate transaction multiple?\"",
+  "Or, \"what's a recent Insurance transaction multiple?\"",
+  "Or, \"what's a recent Wealth Management transaction multiple?\"",
+  "Or, \"what's a recent Consumer Goods transaction multiple?\"",
+  "Or, \"what's a recent Financial Services transaction multiple?\"",
+  "Or, \"what's a recent Telecommunications transaction multiple?\"",
+  "Or, \"what's a recent Transportation transaction multiple?\"",
+  "Or, \"what's a recent Energy Transition transaction multiple?\""
 ];
 
 const randomExtraMessage = extraMessages[Math.floor(Math.random() * extraMessages.length)];
