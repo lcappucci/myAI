@@ -18,35 +18,31 @@ import {
 } from "@/types";
 
 const extraMessages: string[] = [
-  'Ask me something like, "tell me about a recent Healthcare deal."',
+  'Ask me something like, "tell me about a recent Materials deal."',
+  'Ask me something like, "tell me about a recent Communication Services deal."',
   'Ask me something like, "tell me about a recent Industrials deal."',
-  'Ask me something like, "tell me about a recent Tech deal."',
-  'Ask me something like, "tell me about a recent Oil & Gas deal."',
-  'Ask me something like, "tell me about a recent Power & Infrastructure deal."',
+  'Ask me something like, "tell me about a recent Financials deal."',
   'Ask me something like, "tell me about a recent Real Estate deal."',
-  'Ask me something like, "tell me about a recent Insurance deal."',
-  'Ask me something like, "tell me about a recent Wealth Management deal."',
-  'Ask me something like, "tell me about a recent Consumer Goods deal."',
-  'Ask me something like, "tell me about a recent Financial Services deal."',
-  'Ask me something like, "tell me about a recent Telecommunications deal."',
-  'Ask me something like, "tell me about a recent Transportation deal."',
-  'Ask me something like, "tell me about a recent Energy Transition deal."'
+  'Ask me something like, "tell me about a recent Information Technology deal."',
+  'Ask me something like, "tell me about a recent Health Care deal."',
+  'Ask me something like, "tell me about a recent Consumer Discretionary deal."',
+  'Ask me something like, "tell me about a recent Consumer Staples deal."',
+  'Ask me something like, "tell me about a recent Utilities deal."',
+  'Ask me something like, "tell me about a recent Energy deal."'
 ];
 
-const extraOtherMessages: string[] = [
-  "Or, \"what's a recent Healthcare transaction multiple?\"",
-  "Or, \"what's a recent Industrials transaction multiple?\"",
-  "Or, \"what's a recent Tech transaction multiple?\"",
-  "Or, \"what's a recent Oil & Gas transaction multiple?\"",
-  "Or, \"what's a recent Power & Infrastructure transaction multiple?\"",
-  "Or, \"what's a recent Real Estate transaction multiple?\"",
-  "Or, \"what's a recent Insurance transaction multiple?\"",
-  "Or, \"what's a recent Wealth Management transaction multiple?\"",
-  "Or, \"what's a recent Consumer Goods transaction multiple?\"",
-  "Or, \"what's a recent Financial Services transaction multiple?\"",
-  "Or, \"what's a recent Telecommunications transaction multiple?\"",
-  "Or, \"what's a recent Transportation transaction multiple?\"",
-  "Or, \"what's a recent Energy Transition transaction multiple?\""
+const extraMessages: string[] = [
+  'Or, "what’s a recent Materials transaction multiple?"',
+  'Or, "what’s a recent Communication Services transaction multiple?"',
+  'Or, "what’s a recent Industrials transaction multiple?"',
+  'Or, "what’s a recent Financials transaction multiple?"',
+  'Or, "what’s a recent Real Estate transaction multiple?"',
+  'Or, "what’s a recent Information Technology transaction multiple?"',
+  'Or, "what’s a recent Health Care transaction multiple?"',
+  'Or, "what’s a recent Consumer Discretionary transaction multiple?"',
+  'Or, "what’s a recent Consumer Staples transaction multiple?"',
+  'Or, "what’s a recent Utilities transaction multiple?"',
+  'Or, "what’s a recent Energy transaction multiple?"'
 ];
 
 const randomExtraMessage = extraMessages[Math.floor(Math.random() * extraMessages.length)];
