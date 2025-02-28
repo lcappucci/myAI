@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GeistMonoVF';
+  src: url('/fonts/GeistMonoVF.woff2') format('woff2'),
+       url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 body {
-  font-family: Garamond, Helvetica, sans-serif;
+  font-family: 'GeistMonoVF', Helvetica, sans-serif;
 }
 
 @layer utilities {
