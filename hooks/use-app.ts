@@ -17,10 +17,28 @@ import {
   streamedErrorSchema,
 } from "@/types";
 
+const extraMessages: string[] = [
+  'Ask me something like, "tell me about a recent Healthcare deal."',
+  'Ask me something like, "tell me about a recent Industrials deal."',
+  'Ask me something like, "tell me about a recent Tech deal."',
+  'Ask me something like, "tell me about a recent Oil & Gas deal."',
+  'Ask me something like, "tell me about a recent Power & Infrastructure deal."',
+  'Ask me something like, "tell me about a recent Real Estate deal."',
+  'Ask me something like, "tell me about a recent Insurance deal."',
+  'Ask me something like, "tell me about a recent Wealth Management deal."',
+  'Ask me something like, "tell me about a recent Consumer Goods deal."',
+  'Ask me something like, "tell me about a recent Financial Services deal."',
+  'Ask me something like, "tell me about a recent Telecommunications deal."',
+  'Ask me something like, "tell me about a recent Transportation deal."',
+  'Ask me something like, "tell me about a recent Energy Transition deal."'
+];
+
+const randomExtraMessage = extraMessages[Math.floor(Math.random() * extraMessages.length)];
+
 export default function useApp() {
   const initialAssistantMessage: DisplayMessage = {
     role: "assistant",
-    content: INITIAL_MESSAGE,
+    content: `${INITIAL_MESSAGE} ${randomExtraMessage}`,
     citations: [],
   };
 
