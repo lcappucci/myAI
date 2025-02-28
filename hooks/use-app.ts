@@ -33,12 +33,29 @@ const extraMessages: string[] = [
   'Ask me something like, "tell me about a recent Energy Transition deal."'
 ];
 
+const extraOtherMessages: string[] = [
+  'Or, "what are typical Healthcare EBITDA multiples?"',
+  'Or, "what are typical Industrials EBITDA multiples?"',
+  'Or, "what are typical Tech EBITDA multiples?"',
+  'Or, "what are typical Oil & Gas EBITDA multiples?"',
+  'Or, "what are typical Power & Infrastructure EBITDA multiples?"',
+  'Or, "what are typical Real Estate EBITDA multiples?"',
+  'Or, "what are typical Insurance EBITDA multiples?"',
+  'Or, "what are typical Wealth Management EBITDA multiples?"',
+  'Or, "what are typical Consumer Goods EBITDA multiples?"',
+  'Or, "what are typical Financial Services EBITDA multiples?"',
+  'Or, "what are typical Telecommunications EBITDA multiples?"',
+  'Or, "what are typical Transportation EBITDA multiples?"',
+  'Or, "what are typical Energy Transition EBITDA multiples?"'
+];
+
 const randomExtraMessage = extraMessages[Math.floor(Math.random() * extraMessages.length)];
+const randomExtraOtherMessage = extraOtherMessages[Math.floor(Math.random() * extraMessages.length)];
 
 export default function useApp() {
   const initialAssistantMessage: DisplayMessage = {
     role: "assistant",
-    content: `${INITIAL_MESSAGE} ${randomExtraMessage}`,
+    content: `${INITIAL_MESSAGE}\n${randomExtraMessage}\n${randomExtraOtherMessage}`,
     citations: [],
   };
 
